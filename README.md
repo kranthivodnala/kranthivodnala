@@ -7,10 +7,6 @@
 
 - 👯 I’m looking to collaborate on **Cloud Native Projects**
 
-- 👨‍💻 All of my projects are available at [https://learncloudskills.info/](https://learncloudskills.info/)
-
-- 📝 I regularly write articles on [https://kranthivodnala.hashnode.dev/](https://kranthivodnala.hashnode.dev/)
-
 - 💬 Ask me about **AWS, DevOps, Automation**
 
 - 📫 How to reach me **kranthidevops21@gmail.com**
