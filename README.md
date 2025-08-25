@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Kranthi Kumar Vodnala</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">A passionate Cloud Engineer from Orlando, FL</h3>
 
 - 🔭 I’m currently working as a **DevOps/Release Engineer**
 
