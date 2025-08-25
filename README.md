@@ -3,8 +3,6 @@
 
 - 🔭 I’m currently working as a **DevOps/Release Engineer**
 
-- 🌱 I’m currently learning **ML/GenAI**
-
 - 👯 I’m looking to collaborate on **Cloud Native Projects**
 
 - 💬 Ask me about **AWS, DevOps, Automation**
