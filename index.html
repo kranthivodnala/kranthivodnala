@@ -756,11 +756,11 @@
     <div class="nav-inner">
       <div class="nav-logo">KKV</div>
       <ul class="nav-links">
-        <li><button class="active" onclick="scrollTo('about', this)">About</button></li>
-        <li><button onclick="scrollTo('skills', this)">Skills</button></li>
-        <li><button onclick="scrollTo('experience', this)">Resume</button></li>
-        <li><button onclick="scrollTo('projects', this)">Projects</button></li>
-        <li><button onclick="scrollTo('contact', this)">Contact</button></li>
+        <li><button class="active" onclick="navTo('about', this)">About</button></li>
+        <li><button onclick="navTo('skills', this)">Skills</button></li>
+        <li><button onclick="navTo('experience', this)">Resume</button></li>
+        <li><button onclick="navTo('projects', this)">Projects</button></li>
+        <li><button onclick="navTo('contact', this)">Contact</button></li>
       </ul>
     </div>
   </nav>
@@ -896,8 +896,8 @@
           <div style="font-family:var(--font-display);font-size:13px;color:var(--accent);letter-spacing:2px;margin-bottom:24px;">🎓 EDUCATION</div>
           <div class="timeline">
             <div class="timeline-item">
-              <div class="timeline-year">2017 – 2019</div>
-              <div class="timeline-role">Campbellsville University, USA</div>
+              <div class="timeline-year">2015 – 2017</div>
+              <div class="timeline-role">Webster University, USA</div>
               <div class="timeline-desc">Masters in Computer Information Systems</div>
             </div>
             <div class="timeline-item">
@@ -1152,8 +1152,12 @@
     loop();
 
     // ── NAV SCROLL ──
-    function scrollTo(id, btn) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    function navTo(id, btn) {
+      const target = document.getElementById(id);
+      if (!target) return;
+      const navHeight = document.querySelector('nav').offsetHeight;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 16;
+      window.scrollTo({ top, behavior: 'smooth' });
       document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
     }
